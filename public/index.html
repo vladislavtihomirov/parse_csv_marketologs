@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Helping tool from Capital.com</title>
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="month-input">
+      <span>Month</span>
+      <input type="number"  id="addM" value="1" min="1" max="12">
+      <span>Year</span>
+      <input type="number" id="addY" value="2022" min="2021" max="2050">
+      <button style="color: #32a852" onclick="addMonth()">Add</button>
+    </div>
+    <div id="months"></div>
+    <form id='form'>
+        <div class="file-upload">
+            <span class="file-upload-title">Upload file</span>
+            <input type='file' id="file" name='datafile' size='20'>
+        </div>
+        <button style="margin: 0 20px;color: #32a852" onclick='importPortfolioFunction()'>Calculate</button>
+    </form>
+  </body>
+</html>
